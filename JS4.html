@@ -4,22 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcolo Del Dislivello Trekking</title>
     <style>
-        .btn-group .button {
-  background-color: #0489aa; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  float: left;
-}
 
-.btn-group .button:hover {
-  background-color: #322fd3;
-}
+   
         #container1 {
             padding: 20px;
             border: 1px solid black;
@@ -27,14 +13,12 @@
             margin: 10px;
             height: auto;
             width: 300px;
+            
         }
+        
     </style>
 </head>
 <body>
-
-    <div class="btn-group">
-  <button class="button">Button</button>
-  
 </div>
 
    <div id="container1">
@@ -57,6 +41,7 @@
         let start = parseFloat(document.getElementById("startHeight").value);
         let pause = parseFloat(document.getElementById("pauseHeight").value);
         let end = parseFloat(document.getElementById("endHeight").value);
+
 
         // Calcola il dislivello totale
         let dislivelloTotale = Math.abs(end - start);
