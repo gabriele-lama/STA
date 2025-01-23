@@ -7,15 +7,19 @@
 <h1> George Ohm</h1>
 <img src="ohm foto.jpeg"  width="400" height="400">
 
-<li> George Simon Ohm nacque nel 1789 in Germania è stato un fisico e matematico tedesco e anche noto per aver formulato la legge di ohm</li>
-
+<li> George Simon Ohm nacque nel 1789 in Germania è stato un fisico e matematico tedesco e anche noto per aver formulato la legge di ohm, fu anche un insegnante di scuola superiore 
+<br>
+e da li iniziò le sue richerche con la nuova cella elettrochimica inventata dallo scienziato italiano Alessandro Volta.
+</li>
 
 
     <h1> La Prima Legge di Ohm</h1>
 
     <h2>Che cosa è la legge di ohm?</h2>
 
-    <li>La prima legge di Ohm, nota anche come legge di Ohm, è una delle leggi fondamentali dell'elettricità e descrive la relazione tra corrente, tensione e resistenza in un circuito elettrico. La legge afferma che la corrente (I) che scorre attraverso un conduttore tra due punti è direttamente proporzionale alla tensione (V) ai suoi capi, e inversamente proporzionale alla resistenza (R) del conduttore. Matematicamente, la legge di Ohm può essere espressa con la formula:
+    <li>La prima legge di Ohm, nota anche come legge di Ohm, è una delle leggi fondamentali dell'elettricità e descrive la relazione tra corrente, tensione e resistenza in un circuito elettrico.
+    <br>
+ La legge afferma che la corrente (I) che scorre attraverso un conduttore tra due punti è direttamente proporzionale alla tensione (V) ai suoi capi, e inversamente proporzionale alla resistenza (R) del conduttore. Matematicamente, la legge di Ohm può essere espressa con la formula:
 
     I=V/R
     </li>
@@ -29,7 +33,7 @@
     <li>Come viene anche riportato sulla mappa i concetti chiave sono la Corrente(I),Tensione(V),Resistenza(R)
     <br>  
     </li>
-    <h3>Corrente(I)</h3>
+    <h3>Intensità di Corrente(I)</h3>
     <li>La Corrente è presente nel conduttore che all'interno passano numerose cariche elettriche</li>
 
     <h3>Tensione(V)</h3>
@@ -37,6 +41,58 @@
 
     <h3>Resistenza(R)</h3>
     <li>è l'opposizione al flusso di corrente che genera il conduttore come per esempio un tubo </li>
+    <br>
+
+    <h2> Come Calcolare la Legge di Ohm?</h2>
+    <br>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+
+<body>
+    <h1>Verifica, legge di Ohm</h1>Scegli quale formula utilizzare (1: V=I⋅R; 2: I= V/R; 3: R=V/I.)
+    <ul>
+        <li> V = voltaggio (Volt) </li>
+        <li> I = intensità di corrente (Ampere) </li>
+        <li> R = resistenza (Ohm) </li>
+    </ul>
+
+    <input type="text" id="formula" placeholder="Inserisci una tra le 3 formule" oninput="calcola()"><br>
+    <input type="text" id="v1" placeholder="Inserisci il primo valore" oninput="calcola()"><br>
+    <input type="text" id="v2" placeholder="Inserisci il secondo valore" oninput="calcola()"><br>
+    
+    <p id="output"></p>
+
+    <script>
+        function calcola() {
+            let formula = document.getElementById("formula").value;
+            let v1 = document.getElementById("v1").value;
+            let v2 = document.getElementById("v2").value;
+            let risultato;
+
+            if (formula == "1") {
+                risultato = v1 * v2;
+                document.getElementById("output").innerText = "Il voltaggio (V) è: " + risultato + " Volt";
+            } else if (formula == "2") {
+                risultato = v1 / v2;
+                document.getElementById("output").innerText = "L'intensità di corrente (I) è: " + risultato + " Ampere";
+            } else if (formula == "3") {
+                risultato = v1 / v2;
+                document.getElementById("output").innerText = "La resistenza (R) è: " + risultato + " Ohm";
+            } else {
+                document.getElementById("output").innerText = "Seleziona una formula valida (1, 2 o 3).";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+</script>
+<br>
 
     <h1>La Seconda Legge di Ohm </h1>
 <img src="la seconda legge di ohm.jpeg"  width="800" height="550">
